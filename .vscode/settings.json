@@ -1,5 +1,26 @@
 {
   "tailwindCSS.experimental.classRegex": [
     ["cva(?:<[^>]*>)?(([^)]*))", "[\"'`]([^\"'`]*).*?[\"'`]", "(?:twMerge|twJoin)\\(([^\\);]*)[\\);]"]
-  ]
+  ],
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#7126b9",
+    "activityBar.background": "#7126b9",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#b97126",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#7126b9",
+    "statusBar.background": "#571d8f",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#7126b9",
+    "statusBarItem.remoteBackground": "#571d8f",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "tab.activeBorder": "#7126b9",
+    "titleBar.activeBackground": "#571d8f",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#571d8f99",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#571d8f"
 }
