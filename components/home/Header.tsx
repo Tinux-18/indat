@@ -15,7 +15,7 @@ export function Header() {
     <section className="font-poppins text-center">
       <div className="flex h-[70px] items-center justify-between pl-1 pr-4">
         <Image src="/logo.png" alt="Logo" width={100} height={70} />
-        <button href="mailto:info@example.com" onClick={scrollToBottom}>
+        <button onClick={scrollToBottom}>
           <RiMailDownloadLine className="size-8" />
         </button>
       </div>
