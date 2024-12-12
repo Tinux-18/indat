@@ -1,6 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-const { pick, omit } = require("lodash")
-const colors = require("tailwindcss/colors")
 const defaultTheme = require("tailwindcss/defaultTheme")
 
 /** @type {import('tailwindcss').Config} */
@@ -32,6 +29,7 @@ module.exports = {
       },
       fontFamily: {
         body: [
+          "Poppins",
           "Inter",
           "ui-sans-serif",
           "system-ui",
@@ -49,6 +47,7 @@ module.exports = {
           "Noto Color Emoji",
         ],
         sans: [
+          "Poppins",
           "Inter",
           "ui-sans-serif",
           "system-ui",
