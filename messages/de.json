@@ -5,5 +5,10 @@
   "LocaleSwitcher": {
     "label": "Sprache ändern",
     "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ro {🇷🇴 Română} other {Unknown}}"
+  },
+  "Video": {
+    "hi": "Hallo, ich bin Constantin.",
+    "indat": "Ich habe InDat gegründet um technische Lösungen in einer Vielzahl von Branchen zu entwickeln.",
+    "me": "Ich bin ein Full-Stack Softwareentwickler mit Schwerpunkt Backend und freue mich darauf, Ihre Probleme gemeinsam zu lösen."
   }
 }
