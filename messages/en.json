@@ -1,0 +1,9 @@
+{
+  "Footer": {
+    "title": "Let's talk!"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ro {🇷🇴 Română} other {Unknown}}"
+  }
+}

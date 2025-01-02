@@ -1,0 +1,9 @@
+{
+  "Footer": {
+    "title": "Lass uns reden!"
+  },
+  "LocaleSwitcher": {
+    "label": "Sprache ändern",
+    "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ro {🇷🇴 Română} other {Unknown}}"
+  }
+}

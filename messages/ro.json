@@ -1,0 +1,9 @@
+{
+  "Footer": {
+    "title": "Hai să ne cunoaștem!"
+  },
+  "LocaleSwitcher": {
+    "label": "Schimbă limba",
+    "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ro {🇷🇴 Română} other {Unknown}}"
+  }
+}

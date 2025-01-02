@@ -1,7 +1,7 @@
 import { Metadata } from "next"
-import { Footer } from "components/home/Footer"
-import { Header } from "components/home/Header"
-import { Video } from "components/home/Video"
+import { Footer } from "components/Home/Footer"
+import { Header } from "components/Home/Header"
+import { Video } from "components/Home/Video"
 
 export const metadata: Metadata = {
   title: "Welcome to InDat",
