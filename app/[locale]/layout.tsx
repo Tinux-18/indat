@@ -4,22 +4,14 @@ import { NextIntlClientProvider } from "next-intl"
 import { getMessages } from "next-intl/server"
 import { routing } from "i18n/routing"
 import { poppins } from "../fonts"
+import { ThemeProvider } from "next-themes"
 
-export default async function RootLayout(
-  props: {
-    children: React.ReactNode
-    params: Promise<{ locale: string }>
-  }
-) {
-  const params = await props.params;
+export default async function RootLayout(props: { children: React.ReactNode; params: Promise<{ locale: string }> }) {
+  const params = await props.params
 
-  const {
-    locale
-  } = params;
+  const { locale } = params
 
-  const {
-    children
-  } = props;
+  const { children } = props
 
   if (!routing.locales.includes(locale as any)) {
     notFound()
