@@ -7,10 +7,14 @@ import { FaLinkedinIn } from "react-icons/fa"
 import { FaXing } from "react-icons/fa"
 import { LuCalendarPlus2 } from "react-icons/lu"
 
+/**
+ * Display contact information and website footer.
+ */
 export function Footer() {
   const translate = useTranslations("Footer")
   return (
     <section className="mx-auto grid max-w-screen-xl text-center">
+      {/* TODO: hyperlink h2 as well to calendar. */}
       <h2 className="text-5xl ">{translate("title")}</h2>
       <div className="mt-4 flex justify-center space-x-4">
         <Link href="https://calendar.app.google/ousBZpi9mFogSm5b7" target="_blank" rel="noopener noreferrer">

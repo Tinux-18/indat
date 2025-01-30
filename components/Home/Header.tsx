@@ -4,6 +4,9 @@ import React from "react"
 import { RiMailDownloadLine } from "react-icons/ri"
 import LocaleSwitcher from "components/Locale/LocaleSwitcher"
 
+/**
+ * Display top navbar and website header.
+ */
 export function Header() {
   const scrollToBottom = () => {
     window.scrollTo({
@@ -15,13 +18,20 @@ export function Header() {
   return (
     <section className="text-center">
       <div className="flex h-[70px] items-center justify-between pl-1 pr-4">
+        {/* Navbar */}
         <Image src="/logo.png" alt="Logo" width={100} height={70} />
         <LocaleSwitcher />
         <button onClick={scrollToBottom}>
           <RiMailDownloadLine className="size-8" />
         </button>
       </div>
-      <h1 className="text-6xl font-bold tracking-widest">InDat</h1>
+      <h1
+        className="
+       text-6xl font-bold tracking-widest"
+      >
+        InDat
+      </h1>
+      {/* TODO: increase the gradient, it is not visible enough. */}
       <h2 className="t bg-gradient-to-r from-[#9538ff] to-[#d405ff] bg-clip-text text-3xl text-transparent">
         Innovation through Data
       </h2>
