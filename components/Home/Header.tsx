@@ -3,6 +3,7 @@ import Image from "next/image"
 import React from "react"
 import { RiMailDownloadLine } from "react-icons/ri"
 import LocaleSwitcher from "components/Locale/LocaleSwitcher"
+import Link from "next/link"
 
 /**
  * Display top navbar and website header.
@@ -19,20 +20,17 @@ export function Header() {
     <section className="text-center">
       <div className="flex h-[70px] items-center justify-between pl-1 pr-4">
         {/* Navbar */}
-        <Image src="/logo.png" alt="Logo" width={100} height={70} />
+        <Link href="/">
+          {" "}
+          <Image src="/logo_new.png" alt="Logo" width={100} height={70} />
+        </Link>
         <LocaleSwitcher />
         <button onClick={scrollToBottom}>
-          <RiMailDownloadLine className="size-8" />
+          <RiMailDownloadLine className="size-12" />
         </button>
       </div>
-      <h1
-        className="
-       text-6xl font-bold tracking-widest"
-      >
-        InDat
-      </h1>
-      {/* TODO: increase the gradient, it is not visible enough. */}
-      <h2 className="t bg-gradient-to-r from-[#9538ff] to-[#d405ff] bg-clip-text text-3xl text-transparent">
+      <h1 className="text-6xl font-bold tracking-widest">InDat</h1>
+      <h2 className="t bg-gradient-to-r from-[#762dca] to-[#e571fd] bg-clip-text text-3xl text-transparent">
         Innovation through Data
       </h2>
     </section>
