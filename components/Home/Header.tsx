@@ -30,9 +30,7 @@ export function Header() {
         </button>
       </div>
       <h1 className="text-6xl font-bold tracking-widest">InDat</h1>
-      <h2 className="t bg-gradient-to-r from-[#762dca] to-[#e571fd] bg-clip-text text-3xl text-transparent">
-        Innovation through Data
-      </h2>
+      <h2 className="pink-fade text-3xl">Innovation through Data</h2>
     </section>
   )
 }

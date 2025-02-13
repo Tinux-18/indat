@@ -33,7 +33,7 @@ export default function LocaleSwitcherSelect({ children, defaultValue, label }: 
     <label className={clsx("relative text-gray-400", isPending && "transition-opacity [&:disabled]:opacity-30")}>
       <p className="sr-only">{label}</p>
       <select
-        className="inline-flex appearance-none bg-transparent py-3 pl-2 pr-6"
+        className="inline-flex appearance-none border-none bg-transparent py-3 pl-2 pr-6"
         defaultValue={defaultValue}
         disabled={isPending}
         onChange={onSelectChange}
