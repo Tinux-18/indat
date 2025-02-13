@@ -10,5 +10,6 @@
     "hi": "Hallo, ich bin Constantin.",
     "indat": "Ich habe InDat gegründet um technische Lösungen in einer Vielzahl von Branchen zu entwickeln.",
     "me": "Ich bin ein Full-Stack Softwareentwickler mit Schwerpunkt Backend und freue mich darauf, Ihre Probleme gemeinsam zu lösen."
-  }
+  },
+  "Studies": { "header": "Ausbildung", "items": [] }
 }

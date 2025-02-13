@@ -4,8 +4,11 @@ export function Timeline({ events }) {
   return (
     <>
       <div class="relative space-y-8 before:absolute before:inset-0 before:ml-5 before:h-full before:w-0.5 before:-translate-x-px before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent md:before:mx-auto md:before:translate-x-0">
-        {events.map((event: TimelineItem) => (
-          <div class="group relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse">
+        {events.map((event: TimelineItem, index: number) => (
+          <div
+            class="group relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse"
+            kex={index}
+          >
             {/* Icon */}
             <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white bg-slate-300 text-slate-500 shadow md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
               {/* TODO: add icon here */}
@@ -19,7 +22,7 @@ export function Timeline({ events }) {
                 <time class="font-caveat font-medium">{event.date}</time>
               </div>
               {/* Content */}
-              <div class="text-slate-500">{event.content} </div>
+              <div class="text-slate-500">{event.description} </div>
             </div>
           </div>
         ))}
