@@ -14,7 +14,6 @@ export function Footer() {
   const translate = useTranslations("Footer")
   return (
     <section className="mx-auto grid max-w-screen-xl text-center">
-      {/* TODO: hyperlink h2 as well to calendar. */}
       <Link href="https://calendar.app.google/ousBZpi9mFogSm5b7" target="_blank" rel="noopener noreferrer">
         <h2 className="text-5xl">{translate("title")}</h2>
       </Link>
