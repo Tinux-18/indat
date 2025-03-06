@@ -23,6 +23,6 @@
     "titleBar.inactiveForeground": "#e7e7e799"
   },
   "peacock.color": "#571d8f",
-  "i18n-ally.localesPaths": ["i18n", "messages"],
+  "i18n-ally.localesPaths": ["i18n/messages"],
   "i18n-ally.keystyle": "nested"
 }

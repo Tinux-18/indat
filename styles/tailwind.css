@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .pink-fade {
+    @apply bg-gradient-to-r from-[#762dca] to-[#e571fd] bg-clip-text text-transparent;
+  }
+}
