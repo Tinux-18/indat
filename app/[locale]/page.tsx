@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="ml-2 cursor-default select-none bg-white dark:bg-gray-900">
+    <main className="ml-2 flex cursor-default select-none flex-col justify-evenly space-y-6 bg-white dark:bg-gray-900">
       <Header></Header>
       <Intro></Intro>
       <Studies></Studies>

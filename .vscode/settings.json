@@ -25,5 +25,6 @@
   "peacock.color": "#571d8f",
   "i18n-ally.localesPaths": ["i18n/messages"],
   "i18n-ally.keystyle": "nested",
-  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "cSpell.words": ["allowtransparency"]
 }
