@@ -1,9 +1,9 @@
 "use client"
 import Image from "next/image"
+import Link from "next/link"
 import React from "react"
 import { RiMailDownloadLine } from "react-icons/ri"
 import LocaleSwitcher from "components/Locale/LocaleSwitcher"
-import Link from "next/link"
 
 /**
  * Display top navbar and website header.
@@ -22,7 +22,7 @@ export function Header() {
         {/* Navbar */}
         <Link href="/">
           {" "}
-          <Image src="/logo.png" alt="Logo" width={100} height={70} />
+          <Image src="/media/logos/full-color.png" alt="Logo" width={100} height={70} />
         </Link>
         <LocaleSwitcher />
         <button onClick={scrollToBottom}>

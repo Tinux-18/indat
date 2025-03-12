@@ -1,5 +1,5 @@
 export interface TimelineItem {
-  icon?: string
+  icon: string
   title: string
   subtitle: string
   subtitleLink: string

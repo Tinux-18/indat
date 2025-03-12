@@ -1,15 +1,11 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+/* eslint-disable @typescript-eslint/no-require-imports */
 const fs = require("fs")
+// TODO: clean this up.
 
 module.exports = {
-  extends: [
-    "next",
-    "prettier",
-    "react-app",
-    "react-app/jest",
-    "plugin:storybook/recommended",
-    "plugin:tailwindcss/recommended",
-  ],
+  extends: ["next", "prettier", "plugin:tailwindcss/recommended", "plugin:@typescript-eslint/recommended"],
+  plugins: ["@typescript-eslint"],
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     babelOptions: {
       presets: [require.resolve("next/babel")],
@@ -19,13 +15,6 @@ module.exports = {
     "tailwindcss/no-custom-classname": "off",
     "testing-library/prefer-screen-queries": "off",
     "@next/next/no-html-link-for-pages": "off",
-    "@typescript-eslint/no-unused-vars": [
-      "warn",
-      {
-        argsIgnorePattern: "^_",
-        varsIgnorePattern: "^_",
-      },
-    ],
     "sort-imports": [
       "error",
       {
@@ -64,6 +53,11 @@ module.exports = {
         },
       },
     ],
+  },
+  settings: {
+    "import/resolver": {
+      typescript: {},
+    },
   },
 }
 

@@ -15,10 +15,28 @@
     "header": "Studies",
     "items": [
       {
+        "icon": "js",
         "title": "Full-Stack Web Development Bootcamp",
         "subtitle": "Spiced Academy",
         "subtitleLink": "https://www.spiced-academy.com/",
-        "description": "University of Bucharest"
+        "description": "Built 5 full-stack applications covering all the major web development frameworks",
+        "date": "2022"
+      },
+      {
+        "icon": "bear",
+        "title": "MA Political Economy",
+        "subtitle": "Berlin School of Economics and Law",
+        "subtitleLink": "",
+        "description": "Deepened my understanding of European and German societies",
+        "date": "2017"
+      },
+      {
+        "icon": "language",
+        "title": "BA European Studies",
+        "subtitle": "University of Kent, UK",
+        "subtitleLink": "",
+        "description": "Developed thorough critical and analytical thinking",
+        "date": "2015"
       }
     ]
   }
