@@ -6,11 +6,6 @@
     "label": "Schimbă limba",
     "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ro {🇷🇴 Română} other {Unknown}}"
   },
-  "Video": {
-    "hi": "Salut, sunt Constantin!",
-    "indat": "Am creat InDat pentru că vreau să construiesc soluții tehnice în o varietate de domenii.",
-    "me": "Sunt full-stack software developer, specializat pe backend și de abia aștept să rezolvăm problem ta împreună."
-  },
   "Studies": {
     "header": "Studii",
     "items": [
@@ -24,7 +19,7 @@
       },
       {
         "icon": "bear",
-        "title": "MA Political Economy",
+        "title": "Master în Economie Politică",
         "subtitle": "Berlin School of Economics and Law",
         "subtitleLink": "",
         "description": "Mi-am consolidat cunoștințele despre societățile europene și germane",
@@ -32,11 +27,40 @@
       },
       {
         "icon": "language",
-        "title": "BA European Studies",
+        "title": "Licență în Studii Europene",
         "subtitle": "University of Kent, Marea Britanie",
         "subtitleLink": "",
         "description": "Am dezvoltat o gândire critică și analitică aprofundată",
         "date": "2015"
+      }
+    ]
+  },
+  "Background": {
+    "header": "Experiență Profesională",
+    "items": [
+      {
+        "icon": "angular",
+        "title": "Full-Stack Software Developer",
+        "subtitle": "GOING PUBLIC! Akademie für Finanzberatung AG & Co. KG",
+        "subtitleLink": "https://akademie-fuer-finanzberatung.de/",
+        "description": "• Am proiectat și implementat soluții full-stack pentru utilizatorii interni\n• Am fluidizat procesul de dezvoltare",
+        "date": "2022 - present"
+      },
+      {
+        "icon": "python",
+        "title": "Junior Software Engineer - NLP",
+        "subtitle": "Market Logic Software",
+        "subtitleLink": "https://marketlogicsoftware.com/",
+        "description": "Am implementat soluții NLP pentru detectarea, adnotarea și traducerea limbilor",
+        "date": "2020 - 2021"
+      },
+      {
+        "icon": "ai",
+        "title": "Consultant Cognitive Computing",
+        "subtitle": "Market Logic Software",
+        "subtitleLink": "https://marketlogicsoftware.com/",
+        "description": "• Am administrat o echipă de 20 de analiști\n• Am pregătit datele pentru algoritmi de inteligență artificială",
+        "date": "2016 - 2020"
       }
     ]
   }

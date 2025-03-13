@@ -34,5 +34,34 @@
         "date": "2015"
       }
     ]
+  },
+  "Background": {
+    "header": "Work Experience",
+    "items": [
+      {
+        "icon": "angular",
+        "title": "Full-Stack Software Developer",
+        "subtitle": "GOING PUBLIC! Akademie für Finanzberatung AG & Co. KG",
+        "subtitleLink": "https://akademie-fuer-finanzberatung.de/",
+        "description": "• Designed and implemented full-stack solutions for internal users\n• Increased developer happiness through process improvements",
+        "date": "2022 - present"
+      },
+      {
+        "icon": "python",
+        "title": "Junior Software Engineer - NLP",
+        "subtitle": "Market Logic Software",
+        "subtitleLink": "https://marketlogicsoftware.com/",
+        "description": "Implemented NLP solutions for language detection, annotation and translation",
+        "date": "2020 - 2021"
+      },
+      {
+        "icon": "ai",
+        "title": "Consultant Cognitive Computing",
+        "subtitle": "Market Logic Software",
+        "subtitleLink": "https://marketlogicsoftware.com/",
+        "description": "• Managed a team of 20 research analysts\n• Modelled training data for machine learning algorithms",
+        "date": "2016 - 2020"
+      }
+    ]
   }
 }

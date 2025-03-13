@@ -14,7 +14,7 @@ import { MdMailOutline } from "react-icons/md"
 export function Footer() {
   const translate = useTranslations("Footer")
   return (
-    <footer className="mx-auto mb-5 grid max-w-screen-xl text-center">
+    <footer className="mx-auto my-5 grid max-w-screen-xl text-center">
       <Link href="https://calendar.app.google/ousBZpi9mFogSm5b7" target="_blank" rel="noopener noreferrer">
         <h2 className="text-4xl">{translate("title")}</h2>
       </Link>

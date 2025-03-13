@@ -6,11 +6,6 @@
     "label": "Sprache ändern",
     "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ro {🇷🇴 Română} other {Unknown}}"
   },
-  "Video": {
-    "hi": "Hallo, ich bin Constantin.",
-    "indat": "Ich habe InDat gegründet um technische Lösungen in einer Vielzahl von Branchen zu entwickeln.",
-    "me": "Ich bin ein Full-Stack Softwareentwickler mit Schwerpunkt Backend und freue mich darauf, Ihre Probleme gemeinsam zu lösen."
-  },
   "Studies": {
     "header": "Ausbildung",
     "items": [
@@ -37,6 +32,35 @@
         "subtitleLink": "",
         "description": "Entwicklung eines gründlichen kritischen und analytischen Denkens",
         "date": "2015"
+      }
+    ]
+  },
+  "Background": {
+    "header": "Berufserfahrung",
+    "items": [
+      {
+        "icon": "angular",
+        "title": "Full-Stack Softwareentwickler",
+        "subtitle": "GOING PUBLIC! Akademie für Finanzberatung AG & Co. KG",
+        "subtitleLink": "https://akademie-fuer-finanzberatung.de/",
+        "description": "• Design und Implementierung von Full-Stack-Lösungen für unsere internen Benutzer\n• Verbesserung der Zufriedenheit der Entwickler durch neue Prozesse",
+        "date": "2022 - jetzt"
+      },
+      {
+        "icon": "python",
+        "title": "Junior-Softwareentwickler - NLP",
+        "subtitle": "Market Logic Software",
+        "subtitleLink": "https://marketlogicsoftware.com/",
+        "description": "Implementierung von NLP-Lösungen für die Erkennung, Kommentierung und Übersetzung von Text",
+        "date": "2020 - 2021"
+      },
+      {
+        "icon": "ai",
+        "title": "Consultant Cognitive Computing",
+        "subtitle": "Market Logic Software",
+        "subtitleLink": "https://marketlogicsoftware.com/",
+        "description": "• Leitung eines Teams von 20 Forschungsanalysten und Umstellung auf Scrum\n• Modellierung von Trainingsdaten für maschinelle Lernalgorithmen",
+        "date": "2016 - 2020"
       }
     ]
   }

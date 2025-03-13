@@ -34,10 +34,24 @@ export function Timeline({ events }: { events: TimelineItem[] }) {
                   {event.date}
                 </time>
               </div>
-              <p aria-label="Event subtitle" className="text-slate-500">
-                {event.subtitle}
+              {event.subtitleLink ? (
+                <a
+                  href={event.subtitleLink}
+                  aria-label="Event subtitle"
+                  className="text-slate-500 underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {event.subtitle}
+                </a>
+              ) : (
+                <p aria-label="Event subtitle" className="text-slate-500">
+                  {event.subtitle}
+                </p>
+              )}
+              <p aria-label="Event description" className="whitespace-pre-line">
+                {event.description}{" "}
               </p>
-              <p aria-label="Event description">{event.description} </p>
             </div>
           </div>
         )
