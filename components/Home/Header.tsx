@@ -2,7 +2,8 @@
 import Image from "next/image"
 import Link from "next/link"
 import React from "react"
-import { RiMailDownloadLine } from "react-icons/ri"
+import { TbMailDown } from "react-icons/tb"
+
 import LocaleSwitcher from "components/Locale/LocaleSwitcher"
 
 /**
@@ -17,20 +18,17 @@ export function Header() {
   }
 
   return (
-    <section className="text-center">
+    <header className="text-center">
       <div className="flex h-[70px] items-center justify-between pl-1 pr-4">
-        {/* Navbar */}
         <Link href="/">
           {" "}
           <Image src="/media/logos/full-color.png" alt="Logo" width={100} height={70} />
         </Link>
         <LocaleSwitcher />
         <button onClick={scrollToBottom}>
-          <RiMailDownloadLine className="size-12" />
+          <TbMailDown className="size-10" />
         </button>
       </div>
-      <h1 className="text-6xl font-bold tracking-widest">InDat</h1>
-      <h2 className="pink-fade text-3xl">Innovation through Data</h2>
-    </section>
+    </header>
   )
 }

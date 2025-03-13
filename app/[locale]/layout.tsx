@@ -20,7 +20,7 @@ export default async function RootLayout(props: { children: React.ReactNode; par
   return (
     <html lang={locale} className={poppins.className}>
       <NextIntlClientProvider messages={messages}>
-        <body>{children}</body>
+        <>{children}</>
       </NextIntlClientProvider>
     </html>
   )
