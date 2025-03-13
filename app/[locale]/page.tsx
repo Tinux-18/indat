@@ -3,6 +3,7 @@ import { Background } from "components/Home/Background"
 import { Footer } from "components/Home/Footer"
 import { Header } from "components/Home/Header"
 import { Intro } from "components/Home/Intro"
+import { Projects } from "components/Home/Projects"
 import { Studies } from "components/Home/Studies"
 
 export const metadata: Metadata = {
@@ -17,6 +18,7 @@ export default function Home() {
       <Header></Header>
       <main className="flex flex-col items-center justify-center">
         <Intro></Intro>
+        <Projects></Projects>
         <Background></Background>
         <Studies></Studies>
       </main>
