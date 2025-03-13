@@ -11,5 +11,33 @@
     "indat": "Ich habe InDat gegründet um technische Lösungen in einer Vielzahl von Branchen zu entwickeln.",
     "me": "Ich bin ein Full-Stack Softwareentwickler mit Schwerpunkt Backend und freue mich darauf, Ihre Probleme gemeinsam zu lösen."
   },
-  "Studies": { "header": "Ausbildung", "items": [] }
+  "Studies": {
+    "header": "Ausbildung",
+    "items": [
+      {
+        "icon": "js",
+        "title": "Full-Stack Web Development Bootcamp",
+        "subtitle": "Spiced Academy",
+        "subtitleLink": "https://www.spiced-academy.com/",
+        "description": "Erstellung von 5 Apps mit allen wichtigen Web-Entwicklungs-Frameworks",
+        "date": "2022"
+      },
+      {
+        "icon": "bear",
+        "title": "MA Political Economy",
+        "subtitle": "Hochschule für Wirtschaft und Recht Berlin",
+        "subtitleLink": "",
+        "description": "Vertiefung meines Verständnisses der europäischen und deutschen Gesellschaft",
+        "date": "2017"
+      },
+      {
+        "icon": "language",
+        "title": "BA European Studies",
+        "subtitle": "University of Kent, Großbritannien",
+        "subtitleLink": "",
+        "description": "Entwicklung eines gründlichen kritischen und analytischen Denkens",
+        "date": "2015"
+      }
+    ]
+  }
 }

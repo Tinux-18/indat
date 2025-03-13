@@ -11,5 +11,33 @@
     "indat": "Am creat InDat pentru că vreau să construiesc soluții tehnice în o varietate de domenii.",
     "me": "Sunt full-stack software developer, specializat pe backend și de abia aștept să rezolvăm problem ta împreună."
   },
-  "Studies": { "header": "Studii", "items": [] }
+  "Studies": {
+    "header": "Studii",
+    "items": [
+      {
+        "icon": "js",
+        "title": "Full-Stack Web Development Bootcamp",
+        "subtitle": "Spiced Academy",
+        "subtitleLink": "https://www.spiced-academy.com/",
+        "description": "Am construit 5 aplicații full-stack folosind principalele framework-uri Javascript",
+        "date": "2022"
+      },
+      {
+        "icon": "bear",
+        "title": "MA Political Economy",
+        "subtitle": "Berlin School of Economics and Law",
+        "subtitleLink": "",
+        "description": "Mi-am consolidat cunoștințele despre societățile europene și germane",
+        "date": "2017"
+      },
+      {
+        "icon": "language",
+        "title": "BA European Studies",
+        "subtitle": "University of Kent, Marea Britanie",
+        "subtitleLink": "",
+        "description": "Am dezvoltat o gândire critică și analitică aprofundată",
+        "date": "2015"
+      }
+    ]
+  }
 }
