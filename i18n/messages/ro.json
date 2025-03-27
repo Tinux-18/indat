@@ -65,14 +65,14 @@
     ]
   },
   "Projects": {
-    "header": "Projects",
+    "header": "Proiecte",
     "items": [
       {
         "icon": "production",
         "title": "StarIn",
-        "subtitle": "Bringing a mentorship platform into production",
+        "subtitle": "O aplicație de mentorat - de la idee la produs",
         "subtitleLink": "https://www.starin.pro/",
-        "description": "Another developer used a Vercel template to start the StarIn project. I took it over and turned it into a robust production application. Together with the CEO, I focused on making the core functionality available to customers and providing a pleasant user experience.",
+        "description": "Când am preluat proiectul, aplicația era doar un template de la Vercel. Am dezvoltat-o într-o aplicație robustă, gata pentru clienții finali. Împreună cu fondatoarea, am identificat funcționalitățile importante și le-am livrat clienților.",
         "date": "2024"
       },
       {
@@ -80,23 +80,23 @@
         "title": "Single Sign-On Service",
         "subtitle": "Endpoint",
         "subtitleLink": "https://aloha.a24g.de/docs#/User%20Service/get_ilias_sso_service_users_ilias_sso_get",
-        "description": "I wrote a service that generates an SSO URL for the Going Public e-learning platform.\n\nThere were two main challenges:\n• complex business logic that defines which users are allowed to get a URL\n• working with 3 different systems",
+        "description": "Am scris un program care generează un URL SSO pentru platforma de e-learning folosită de Going Public.\n\nPrincipalele provocări au fost:\n• logica complexă ce determină cine poate obține un URL\n• comunicarea dintre trei sisteme diferite",
         "date": "2023"
       },
       {
         "icon": "map",
         "title": "Harta Diasporei",
-        "subtitle": "A community-driven platform for Romanian-speaking diaspora",
+        "subtitle": "O platformă creată de și pentru diaspora",
         "subtitleLink": "https://hartadiasporei.org/",
-        "description": "Harta diasporei is my NGO's first digital product, and I'm very proud of it.\n\nTogether with Theo Costea and the whole DCB team, we have created an open-source, free-to-use map that allows Romanian communities to create a visual representation of all the places where Romanian can be spoken in their city.\n\nThe challenge of the project is to meet the needs of the many users we serve: community members organisers, and DCB admins.",
+        "description": "Harta diasporei este primul nostru produs digital și sunt foarte mândru de el.\n\nÎmpreună cu Theo Costea și întreaga echipă DCB, am creat o hartă open-source, gratuită, care permite comunităților românești să creeze o reprezentare vizuală a tuturor locurilor în care se poate vorbi limba română în orașul lor.\n\nProvocarea proiectului este de a răspunde nevoilor diverșilor utilizatori pe care îi deservim: administratorii platformei, asociațiile din teritoriu și utilizatorii finali.",
         "date": "2022"
       },
       {
         "icon": "ai",
         "title": "Colgate-Palmolive",
-        "subtitle": "Case Study",
+        "subtitle": "Studiu de caz",
         "subtitleLink": "https://marketlogicsoftware.com/case-studies/how-colgate-transforms-trends-knowledge-into-actionable-insights-at-scale/",
-        "description": "During my time at Market Logic Software (MLS), I trained NLP models to extract information from market research to enhance the insight platforms of industry leaders such as Coca-Cola, Procter & Gamble, Unilever and Colgate-Palmolive.\n\nWhat my team and I actually did was first prepare market research reports and data from syndicated sources and social media for human annotation. We then tagged entities relevant to the client, such as their products, and customer sentiment. Finally, we trained and evaluated the models, which were then sent to production.",
+        "description": "La Market Logic Software (MLS), am pregătit modele NLP pentru a extrage informații din studii de piață în vederea îmbunătățirii platformelor de marketing unor companii, precum Coca-Cola, Procter & Gamble, Unilever și Colgate-Palmolive.\n\nÎmpreună cu echipa mea am pregătit mai întâi rapoarte de cercetare de piață și date din surse sindicalizate și social media pentru adnotare umană. Apoi am etichetat entitățile relevante pentru client, cum ar fi produsele lor și sentimentul clienților. În cele din urmă, am instruit și evaluat modelele, care au fost apoi trimise în producție.",
         "date": "2018"
       }
     ]
