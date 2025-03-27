@@ -44,9 +44,9 @@ export function Footer() {
         {/* Right Column */}
         <div className="w-full p-4 text-sm md:ml-auto md:w-1/3 md:self-end">
           <p className="text-right">
-            <span className="font-bold">Acknowledgements</span>
+            <span className="font-bold">{translate("acknowledgements.title")}</span>
             <br />
-            Photography by{" "}
+            {translate("acknowledgements.photography")}{" "}
             <Link
               href="https://www.oanapopa.de"
               className="text-blue-500 underline transition-colors hover:text-blue-700"
@@ -57,7 +57,7 @@ export function Footer() {
             </Link>
             ,
             <br />
-            Logo design by{" "}
+            {translate("acknowledgements.logo")}{" "}
             <Link
               href="https://juliettepatissier.com/"
               className="text-blue-500 underline transition-colors hover:text-blue-700"

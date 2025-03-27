@@ -1,6 +1,7 @@
 {
   "Footer": {
-    "title": "Let's talk!"
+    "title": "Let's talk!",
+    "acknowledgements": { "title": "Acknowledgements", "photography": "Photography by", "logo": "Logo Design by" }
   },
   "LocaleSwitcher": {
     "label": "Change language",

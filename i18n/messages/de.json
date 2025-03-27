@@ -1,6 +1,7 @@
 {
   "Footer": {
-    "title": "Lass uns reden!"
+    "title": "Lass uns reden!",
+    "acknowledgements": { "title": "Danksagungen", "photography": "Fotografie von", "logo": "Logo-Design von" }
   },
   "LocaleSwitcher": {
     "label": "Sprache ändern",

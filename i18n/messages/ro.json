@@ -1,6 +1,7 @@
 {
   "Footer": {
-    "title": "Hai să ne cunoaștem!"
+    "title": "Hai să ne cunoaștem!",
+    "acknowledgements": { "title": "Mulțumiri", "photography": "Fotografie de", "logo": "Logo design de" }
   },
   "LocaleSwitcher": {
     "label": "Schimbă limba",

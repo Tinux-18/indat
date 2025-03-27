@@ -11,6 +11,9 @@ export function Intro() {
   const pathLanguage = pathname?.split("/")[1] || "en" // Default to 'en' if not found
   const language = pathLanguage == "ro" ? "en" : pathLanguage
 
+  // Disable autoplay in development environment.
+  const isProduction = process.env.NODE_ENV === "production"
+
   return (
     <section className="mx-4 w-full max-w-4xl sm:mx-8 md:mx-12 md:max-w-5xl lg:mx-16 lg:max-w-6xl">
       <hgroup className="mb-8 text-center">
@@ -21,13 +24,13 @@ export function Intro() {
         <div className="absolute inset-0 overflow-hidden rounded-xl">
           <Vimeo
             video={1065153174}
-            autoplay
-            responsive
+            autoplay={isProduction}
             dnt={true}
             showTitle={false}
             showByline={false}
             showPortrait={false}
             textTrack={language}
+            responsive
           />
         </div>
       </div>
