@@ -19,6 +19,7 @@ export default async function RootLayout(props: { children: React.ReactNode; par
   const messages = await getMessages()
   return (
     <html lang={locale} className={poppins.className}>
+      <meta name="apple-mobile-web-app-title" content="InDat" />
       <NextIntlClientProvider messages={messages}>
         <>{children}</>
       </NextIntlClientProvider>
