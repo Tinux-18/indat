@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <body className="ml-2 cursor-default select-none dark:bg-gray-900">
+    <div className="cursor-default select-none pb-3 dark:bg-gray-900">
       <Header></Header>
       <main className="flex flex-col items-center justify-center">
         <Intro></Intro>
@@ -23,6 +23,6 @@ export default function Home() {
         <Studies></Studies>
       </main>
       <Footer></Footer>
-    </body>
+    </div>
   )
 }
