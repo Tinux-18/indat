@@ -1,22 +1,28 @@
 import { Metadata } from "next"
+import { Background } from "components/Home/Background"
 import { Footer } from "components/Home/Footer"
 import { Header } from "components/Home/Header"
-import { Video } from "components/Home/Video"
+import { Intro } from "components/Home/Intro"
+import { Projects } from "components/Home/Projects"
+import { Studies } from "components/Home/Studies"
 
 export const metadata: Metadata = {
-  title: "Welcome to InDat",
-  twitter: {
-    card: "summary_large_image",
-  },
-  openGraph: {},
+  title: "InDat",
+  description: "Innovation through Data",
+  authors: [{ name: "Constantin Rigu", url: "https://github.com/Tinux-18" }],
 }
 
 export default function Home() {
   return (
-    <main className=" cursor-default select-none bg-white dark:bg-gray-900">
+    <div className="cursor-default select-none pb-3 dark:bg-gray-900">
       <Header></Header>
-      <Video></Video>
+      <main className="flex flex-col items-center justify-center">
+        <Intro></Intro>
+        <Projects></Projects>
+        <Background></Background>
+        <Studies></Studies>
+      </main>
       <Footer></Footer>
-    </main>
+    </div>
   )
 }

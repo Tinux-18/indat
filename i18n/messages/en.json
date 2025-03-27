@@ -1,0 +1,104 @@
+{
+  "Footer": {
+    "title": "Let's talk!"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ro {🇷🇴 Română} other {Unknown}}"
+  },
+  "Studies": {
+    "header": "Studies",
+    "items": [
+      {
+        "icon": "js",
+        "title": "Full-Stack Web Development Bootcamp",
+        "subtitle": "Spiced Academy",
+        "subtitleLink": "https://www.spiced-academy.com/",
+        "description": "Built 5 full-stack applications covering all the major web development frameworks",
+        "date": "2022"
+      },
+      {
+        "icon": "bear",
+        "title": "MA Political Economy",
+        "subtitle": "Berlin School of Economics and Law",
+        "subtitleLink": "",
+        "description": "Deepened my understanding of European and German societies",
+        "date": "2017"
+      },
+      {
+        "icon": "language",
+        "title": "BA European Studies",
+        "subtitle": "University of Kent, UK",
+        "subtitleLink": "",
+        "description": "Developed thorough critical and analytical thinking",
+        "date": "2015"
+      }
+    ]
+  },
+  "Background": {
+    "header": "Work Experience",
+    "items": [
+      {
+        "icon": "angular",
+        "title": "Full-Stack Software Developer",
+        "subtitle": "GOING PUBLIC! Akademie für Finanzberatung AG & Co. KG",
+        "subtitleLink": "https://akademie-fuer-finanzberatung.de/",
+        "description": "• Designed and implemented full-stack solutions for internal users\n• Increased developer happiness through process improvements",
+        "date": "2022 - present"
+      },
+      {
+        "icon": "python",
+        "title": "Junior Software Engineer - NLP",
+        "subtitle": "Market Logic Software",
+        "subtitleLink": "https://marketlogicsoftware.com/",
+        "description": "Implemented NLP solutions for language detection, annotation and translation",
+        "date": "2020 - 2021"
+      },
+      {
+        "icon": "ai",
+        "title": "Consultant Cognitive Computing",
+        "subtitle": "Market Logic Software",
+        "subtitleLink": "https://marketlogicsoftware.com/",
+        "description": "• Managed a team of 20 research analysts\n• Modelled training data for machine learning algorithms",
+        "date": "2016 - 2020"
+      }
+    ]
+  },
+  "Projects": {
+    "header": "Projects",
+    "items": [
+      {
+        "icon": "production",
+        "title": "StarIn",
+        "subtitle": "Bringing a mentorship platform into production",
+        "subtitleLink": "https://www.starin.pro/",
+        "description": "When I took over the project, the app was just a Vercel template. I turned it into a robust production application. Together with the CEO, we identified the core functionality and I delivered it to the customers.",
+        "date": "2024"
+      },
+      {
+        "icon": "security",
+        "title": "Single Sign-On Service",
+        "subtitle": "Endpoint",
+        "subtitleLink": "https://aloha.a24g.de/docs#/User%20Service/get_ilias_sso_service_users_ilias_sso_get",
+        "description": "I wrote a service that generates an SSO URL for the Going Public e-learning platform.\n\nThere were two main challenges:\n• complex business logic that defines which users are allowed to get a URL\n• working with 3 different systems",
+        "date": "2023"
+      },
+      {
+        "icon": "map",
+        "title": "Harta Diasporei",
+        "subtitle": "A community-driven platform for Romanians",
+        "subtitleLink": "https://hartadiasporei.org/",
+        "description": "Harta diasporei is my NGO's first digital product, and I'm very proud of it.\n\nTogether with Theo Costea and the whole DCB team, we have created an open-source, free-to-use map that allows Romanian communities to create a visual representation of all the places where Romanian can be spoken in their city.\n\nThe challenge of the project is to meet the needs of the many users we serve: community members organisers, and DCB admins.",
+        "date": "2022"
+      },
+      {
+        "icon": "ai",
+        "title": "Colgate-Palmolive",
+        "subtitle": "Case Study",
+        "subtitleLink": "https://marketlogicsoftware.com/case-studies/how-colgate-transforms-trends-knowledge-into-actionable-insights-at-scale/",
+        "description": "During my time at Market Logic Software, I trained natural language processing (NLP) models to extract information from market research to enhance the insight platforms of industry leaders such as Coca-Cola, Procter & Gamble, Unilever and Colgate-Palmolive.\n\nWhat my team and I actually did was first prepare market research reports and data from syndicated sources and social media for human annotation. We then tagged entities relevant to the client, such as their products, and customer sentiment. Finally, we trained and evaluated the models, which were then sent to production.",
+        "date": "2018"
+      }
+    ]
+  }
+}

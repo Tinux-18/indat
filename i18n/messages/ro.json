@@ -1,0 +1,104 @@
+{
+  "Footer": {
+    "title": "Hai să ne cunoaștem!"
+  },
+  "LocaleSwitcher": {
+    "label": "Schimbă limba",
+    "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ro {🇷🇴 Română} other {Unknown}}"
+  },
+  "Studies": {
+    "header": "Studii",
+    "items": [
+      {
+        "icon": "js",
+        "title": "Full-Stack Web Development Bootcamp",
+        "subtitle": "Spiced Academy",
+        "subtitleLink": "https://www.spiced-academy.com/",
+        "description": "Am construit 5 aplicații full-stack folosind principalele framework-uri Javascript",
+        "date": "2022"
+      },
+      {
+        "icon": "bear",
+        "title": "Master în Economie Politică",
+        "subtitle": "Berlin School of Economics and Law",
+        "subtitleLink": "",
+        "description": "Mi-am consolidat cunoștințele despre societățile europene și germane",
+        "date": "2017"
+      },
+      {
+        "icon": "language",
+        "title": "Licență în Studii Europene",
+        "subtitle": "University of Kent, Marea Britanie",
+        "subtitleLink": "",
+        "description": "Am dezvoltat o gândire critică și analitică aprofundată",
+        "date": "2015"
+      }
+    ]
+  },
+  "Background": {
+    "header": "Experiență Profesională",
+    "items": [
+      {
+        "icon": "angular",
+        "title": "Full-Stack Software Developer",
+        "subtitle": "GOING PUBLIC! Akademie für Finanzberatung AG & Co. KG",
+        "subtitleLink": "https://akademie-fuer-finanzberatung.de/",
+        "description": "• Am proiectat și implementat soluții full-stack pentru utilizatorii interni\n• Am fluidizat procesul de dezvoltare",
+        "date": "2022 - present"
+      },
+      {
+        "icon": "python",
+        "title": "Junior Software Engineer - NLP",
+        "subtitle": "Market Logic Software",
+        "subtitleLink": "https://marketlogicsoftware.com/",
+        "description": "Am implementat soluții NLP pentru detectarea, adnotarea și traducerea limbilor",
+        "date": "2020 - 2021"
+      },
+      {
+        "icon": "ai",
+        "title": "Consultant Cognitive Computing",
+        "subtitle": "Market Logic Software",
+        "subtitleLink": "https://marketlogicsoftware.com/",
+        "description": "• Am administrat o echipă de 20 de analiști\n• Am pregătit datele pentru algoritmi de inteligență artificială",
+        "date": "2016 - 2020"
+      }
+    ]
+  },
+  "Projects": {
+    "header": "Proiecte",
+    "items": [
+      {
+        "icon": "production",
+        "title": "StarIn",
+        "subtitle": "O aplicație de mentorat - de la idee la produs",
+        "subtitleLink": "https://www.starin.pro/",
+        "description": "Când am preluat proiectul, aplicația era doar un template de la Vercel. Am dezvoltat-o într-o aplicație robustă, gata pentru clienții finali. Împreună cu fondatoarea, am identificat funcționalitățile importante și le-am livrat clienților.",
+        "date": "2024"
+      },
+      {
+        "icon": "security",
+        "title": "Single Sign-On Service",
+        "subtitle": "Endpoint",
+        "subtitleLink": "https://aloha.a24g.de/docs#/User%20Service/get_ilias_sso_service_users_ilias_sso_get",
+        "description": "Am scris un program care generează un URL SSO pentru platforma de e-learning folosită de Going Public.\n\nPrincipalele provocări au fost:\n• logica complexă ce determină cine poate obține un URL\n• comunicarea dintre trei sisteme diferite",
+        "date": "2023"
+      },
+      {
+        "icon": "map",
+        "title": "Harta Diasporei",
+        "subtitle": "O platformă creată de și pentru diaspora",
+        "subtitleLink": "https://hartadiasporei.org/",
+        "description": "Harta diasporei este primul nostru produs digital și sunt foarte mândru de el.\n\nÎmpreună cu Theo Costea și întreaga echipă DCB, am creat o hartă open-source, gratuită, care permite comunităților românești să creeze o reprezentare vizuală a tuturor locurilor în care se poate vorbi limba română în orașul lor.\n\nProvocarea proiectului este de a răspunde nevoilor diverșilor utilizatori pe care îi deservim: administratorii platformei, asociațiile din teritoriu și utilizatorii finali.",
+        "date": "2022"
+      },
+      {
+        "icon": "ai",
+        "title": "Colgate-Palmolive",
+        "subtitle": "Studiu de caz",
+        "subtitleLink": "https://marketlogicsoftware.com/case-studies/how-colgate-transforms-trends-knowledge-into-actionable-insights-at-scale/",
+        "description": "La Market Logic Software (MLS), am pregătit modele NLP pentru a extrage informații din studii de piață în vederea îmbunătățirii platformelor de marketing unor companii, precum Coca-Cola, Procter & Gamble, Unilever și Colgate-Palmolive.\n\nÎmpreună cu echipa mea am pregătit mai întâi rapoarte de cercetare de piață și date din surse sindicalizate și social media pentru adnotare umană. Apoi am etichetat entitățile relevante pentru client, cum ar fi produsele lor și sentimentul clienților. În cele din urmă, am instruit și evaluat modelele, care au fost apoi trimise în producție.",
+        "date": "2018"
+      }
+    ]
+  }
+}
