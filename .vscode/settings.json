@@ -26,5 +26,5 @@
   "i18n-ally.localesPaths": ["i18n/messages"],
   "i18n-ally.keystyle": "nested",
   "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
-  "cSpell.words": ["allowtransparency"]
+  "cSpell.words": ["allowtransparency", "Patissier"]
 }
