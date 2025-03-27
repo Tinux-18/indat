@@ -20,8 +20,14 @@ export function Header() {
   return (
     <header className="text-center">
       <div className="flex h-[70px] items-center justify-between pl-1 pr-4">
-        <Image src="/media/logos/full-color.png" alt="Logo" width={100} height={70} className="pt-3" />
-        <div className="flex items-center gap-4">
+        <Image
+          src="/media/logos/full-color.png"
+          alt="Logo"
+          width={100}
+          height={70}
+          className="h-auto w-[70px] pt-3 md:w-[100px]"
+        />
+        <div className="flex items-center gap-2 md:gap-4">
           <LocaleSwitcher />
           <ThemeToggle />
           <button onClick={scrollToBottom}>
