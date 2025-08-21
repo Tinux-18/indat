@@ -59,6 +59,14 @@ module.exports = {
       typescript: {},
     },
   },
+  overrides: [
+    {
+      files: ["next-env.d.ts"],
+      rules: {
+        "@typescript-eslint/triple-slash-reference": "off",
+      },
+    },
+  ],
 }
 
 function getDirectoriesToSort() {

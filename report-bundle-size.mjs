@@ -10,8 +10,8 @@
 import gzSize from "gzip-size"
 import mkdirp from "mkdirp"
 import fs from "fs"
-import { createRequire } from "module"
 import path from "path"
+import { createRequire } from "module"
 
 const require = createRequire(import.meta.url)
 
@@ -34,13 +34,13 @@ try {
 const buildMeta = require(path.join(nextMetaRoot, "build-manifest.json"))
 const appDirMeta = require(path.join(nextMetaRoot, "app-build-manifest.json"))
 
-// this memory cache ensures we don't read any script file more than once
+// this memory cache ensures we dont read any script file more than once
 // bundles are often shared between pages
 const memoryCache = {}
 
 // since _app is the template that all other pages are rendered into,
 // every page must load its scripts. we'll measure its size here
-// const globalBundle = buildMeta.pages["/_app"]
+const globalBundle = buildMeta.pages["/_app"]
 // const globalBundleSizes = getScriptSizes(globalBundle)
 
 // next, we calculate the size of each page's scripts, after
