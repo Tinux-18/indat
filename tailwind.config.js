@@ -1,8 +1,8 @@
-const defaultTheme = require("tailwindcss/defaultTheme")
-const flowbite = require("flowbite-react/tailwind")
+import flowbite from "flowbite-react/tailwind"
+import defaultTheme from "tailwindcss/defaultTheme"
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const config = {
   darkMode: "class",
   content: [
     "./index.html",
@@ -89,3 +89,5 @@ module.exports = {
     hoverOnlyWhenSupported: true,
   },
 }
+
+export default config
