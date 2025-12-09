@@ -1,5 +1,5 @@
-import flowbite from "flowbite-react/tailwind"
 import defaultTheme from "tailwindcss/defaultTheme"
+import flowbite from "flowbite/plugin"
 
 /** @type {import('tailwindcss').Config} */
 const config = {
@@ -11,7 +11,6 @@ const config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
-    flowbite.content(),
   ],
   theme: {
     extend: {
@@ -84,7 +83,7 @@ const config = {
       },
     },
   },
-  plugins: [flowbite.plugin()],
+  plugins: [flowbite],
   future: {
     hoverOnlyWhenSupported: true,
   },

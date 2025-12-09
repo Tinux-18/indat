@@ -7,7 +7,7 @@ import { getMessages } from "next-intl/server"
 import { ThemeProvider } from "app/providers/theme-provider"
 import { routing } from "i18n/routing"
 import { poppins } from "../fonts"
-
+import "flowbite-react"
 export default async function RootLayout(props: { children: React.ReactNode; params: Promise<{ locale: string }> }) {
   const params = await props.params
   const { locale } = params
