@@ -13,11 +13,15 @@
     "analyze": "cross-env ANALYZE=true yarn build",
     "test": "cross-env FORCE_COLOR=1 jest --passWithNoTests",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "tonight:migrate": "node --env-file=.env.local db/tonight/migrate.mjs",
+    "tonight:backfill-images": "node --env-file=.env.local db/tonight/backfill-images.mjs",
     "preinstall": "npx npm-only-allow@latest --PM yarn",
     "postinstall": "npx patch-package -y",
     "coupling-graph": "npx madge --extensions js,jsx,ts,tsx,css,md,mdx ./ --exclude '.next|tailwind.config.js|reset.d.ts|prettier.config.js|postcss.config.js|next.config.js|next-env.d.ts|instrumentation.ts|e2e/|README.md|.eslintrc.js' --image graph.svg"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.115.0",
+    "@neondatabase/serverless": "^1.1.0",
     "@next/bundle-analyzer": "^16.0.8",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "13.0.1",
@@ -34,6 +38,7 @@
     "class-variance-authority": "^0.7.1",
     "flowbite": "^4.0.1",
     "flowbite-react": "^0.12.12",
+    "motion": "^12.43.0",
     "next": "^16.0.8",
     "next-compose-plugins": "^2.2.1",
     "next-intl": "^4.5.8",
@@ -97,6 +102,7 @@
     "ts-jest": "^29.4.6",
     "tsc": "^2.0.4",
     "typescript": "5.9.3",
+    "typescript-eslint": "8.49.0",
     "webpack": "5.103.0"
   },
   "engines": {

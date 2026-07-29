@@ -28,3 +28,5 @@ yarn-error.log*
 .env.production.local
 /test-results/
 /.npm-only-allow
+.vercel
+.env*
