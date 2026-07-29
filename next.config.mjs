@@ -8,7 +8,7 @@ const withNextIntl = createNextIntlPlugin()
 /**
  * @type {import('next').NextConfig}
  */
-const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], {
+const baseConfig = {
   reactStrictMode: true,
   logging: {
     fetches: {
@@ -16,6 +16,9 @@ const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], {
     },
   },
   experimental: { instrumentationHook: true },
+  images: {
+    remotePatterns: [{ protocol: "https", hostname: "images.pexels.com" }],
+  },
   rewrites() {
     return [
       { source: "/healthz", destination: "/api/health" },
@@ -24,6 +27,10 @@ const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], {
       { source: "/ping", destination: "/api/health" },
     ]
   },
-})
+}
 
-export default withNextIntl(config)
+// withNextIntl must wrap the plain config object before withPlugins does —
+// next-compose-plugins returns a config-as-function, and next-intl's plugin
+// merges via Object.assign(nextConfig), which silently drops everything when
+// nextConfig is a function (functions have no enumerable own properties).
+export default withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], withNextIntl(baseConfig))
