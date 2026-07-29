@@ -7,8 +7,9 @@ export function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
-  // Only show the theme toggle after mounting to avoid hydration mismatch
+  // Only show the theme toggle after mounting to avoid hydration mismatch.
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- intentional client-only mount flag, not derived from props/state
     setMounted(true)
   }, [])
 
