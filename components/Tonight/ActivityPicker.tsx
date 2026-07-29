@@ -147,7 +147,7 @@ export function ActivityPicker({ activities, todayPick }: { activities: Activity
                       <motion.button
                         onTap={fetchSuggestion}
                         disabled={suggestionLoading}
-                        className="flex h-full w-full flex-col items-center justify-center gap-2 text-center disabled:opacity-60"
+                        className="flex flex-col items-center justify-center gap-2 text-center disabled:opacity-60 size-full"
                       >
                         <span className="text-5xl">✨</span>
                         <span className="px-4 text-sm font-medium text-gray-600 dark:text-gray-300">
@@ -198,7 +198,7 @@ export function ActivityPicker({ activities, todayPick }: { activities: Activity
             <button
               onClick={() => (current.kind === "activity" ? pick(current.activity.id) : pickSuggestion())}
               disabled={picking || (current.kind === "suggestion" && !suggestion)}
-              className="rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white shadow-sm transition active:scale-[0.98] disabled:opacity-50"
+              className="rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white shadow-sm transition active:scale-0.98 disabled:opacity-50"
             >
               Pick this
             </button>

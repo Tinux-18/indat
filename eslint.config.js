@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 const nextConfig = require("eslint-config-next")
 const prettierConfig = require("eslint-config-prettier/flat")
+const tailwindcssConfig = require("eslint-plugin-tailwindcss").configs.recommended
 const tseslint = require("typescript-eslint")
 const fs = require("fs")
 const path = require("path")
@@ -29,16 +30,22 @@ module.exports = [
   { plugins: { "@typescript-eslint": tseslint.plugin } },
   ...nextConfig.map(withoutTypescriptEslintPlugin),
   ...tseslint.configs.recommended.map(withoutTypescriptEslintPlugin),
+  tailwindcssConfig,
   prettierConfig,
   {
     settings: {
       "import/resolver": {
         typescript: {},
       },
+      tailwindcss: {
+        cssConfigPath: "styles/tailwind.css",
+      },
     },
     rules: {
       "testing-library/prefer-screen-queries": "off",
       "@next/next/no-html-link-for-pages": "off",
+      "tailwindcss/no-custom-classname": "off",
+      "tailwindcss/classnames-order": "off",
       "sort-imports": [
         "error",
         {
