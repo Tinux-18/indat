@@ -29,7 +29,10 @@ export function ActivityPicker({ activities, todayPick }: { activities: Activity
   const [suggestionLoading, setSuggestionLoading] = useState(false)
   const [seenSuggestions, setSeenSuggestions] = useState<string[]>([])
 
-  const cards: Card[] = [...activities.map((activity): Card => ({ kind: "activity", activity })), { kind: "suggestion" }]
+  const cards: Card[] = [
+    ...activities.map((activity): Card => ({ kind: "activity", activity })),
+    { kind: "suggestion" },
+  ]
   const count = cards.length
   const current = count > 0 ? cards[((index % count) + count) % count] : undefined
   const isPickedToday = current?.kind === "activity" && current.activity.id === todayPick?.activityId
@@ -147,7 +150,7 @@ export function ActivityPicker({ activities, todayPick }: { activities: Activity
                       <motion.button
                         onTap={fetchSuggestion}
                         disabled={suggestionLoading}
-                        className="flex flex-col items-center justify-center gap-2 text-center disabled:opacity-60 size-full"
+                        className="flex size-full flex-col items-center justify-center gap-2 text-center disabled:opacity-60"
                       >
                         <span className="text-5xl">✨</span>
                         <span className="px-4 text-sm font-medium text-gray-600 dark:text-gray-300">
@@ -198,7 +201,8 @@ export function ActivityPicker({ activities, todayPick }: { activities: Activity
             <button
               onClick={() => (current.kind === "activity" ? pick(current.activity.id) : pickSuggestion())}
               disabled={picking || (current.kind === "suggestion" && !suggestion)}
-              className="rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white shadow-sm transition active:scale-0.98 disabled:opacity-50"
+              // eslint-disable-next-line tailwindcss/no-unnecessary-arbitrary-value -- the suggested "active:scale-0.98" isn't a real Tailwind class (confirmed by tailwindcss/no-custom-classname); scale steps are whole percentages, decimals need the arbitrary-value bracket syntax
+              className="rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white shadow-sm transition active:scale-[0.98] disabled:opacity-50"
             >
               Pick this
             </button>

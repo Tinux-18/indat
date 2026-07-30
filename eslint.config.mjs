@@ -1,10 +1,13 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
-const nextConfig = require("eslint-config-next")
-const prettierConfig = require("eslint-config-prettier/flat")
-const tailwindcssConfig = require("eslint-plugin-tailwindcss").configs.recommended
-const tseslint = require("typescript-eslint")
-const fs = require("fs")
-const path = require("path")
+import nextConfig from "eslint-config-next"
+import prettierConfig from "eslint-config-prettier/flat"
+import tailwindcssPlugin from "eslint-plugin-tailwindcss"
+import tseslint from "typescript-eslint"
+import fs from "fs"
+import path from "path"
+import { fileURLToPath } from "url"
+
+const tailwindcssConfig = tailwindcssPlugin.configs.recommended
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 function getDirectoriesToSort() {
   const ignoredSortingDirectories = [".git", ".next", ".vscode", "node_modules"]
@@ -26,11 +29,18 @@ function withoutTypescriptEslintPlugin(config) {
   return { ...config, plugins }
 }
 
-module.exports = [
+const config = [
   { plugins: { "@typescript-eslint": tseslint.plugin } },
   ...nextConfig.map(withoutTypescriptEslintPlugin),
   ...tseslint.configs.recommended.map(withoutTypescriptEslintPlugin),
-  tailwindcssConfig,
+  {
+    ...tailwindcssConfig,
+    rules: {
+      ...tailwindcssConfig.rules,
+      "tailwindcss/no-custom-classname": ["error", { whitelist: ["pink-fade"] }],
+      "tailwindcss/classnames-order": "error",
+    },
+  },
   prettierConfig,
   {
     settings: {
@@ -42,10 +52,7 @@ module.exports = [
       },
     },
     rules: {
-      "testing-library/prefer-screen-queries": "off",
-      "@next/next/no-html-link-for-pages": "off",
-      "tailwindcss/no-custom-classname": "off",
-      "tailwindcss/classnames-order": "off",
+      "@next/next/no-html-link-for-pages": "error",
       "sort-imports": [
         "error",
         {
@@ -86,3 +93,5 @@ module.exports = [
     },
   },
 ]
+
+export default config

@@ -22,14 +22,14 @@ export function Timeline({ events }: { events: TimelineItem[] }) {
             </div>
             <div
               aria-label={`Timeline card: ${event.title}`}
-              className="w-[calc(100%-4rem)] rounded border border-slate-200 bg-white p-4 shadow dark:border-slate-700 dark:bg-slate-800 md:w-[calc(50%-2.5rem)]"
+              className="w-[calc(100%-4rem)] rounded border border-slate-200 bg-white p-4 shadow md:w-[calc(50%-2.5rem)] dark:border-slate-700 dark:bg-slate-800"
             >
               <div className="mb-1 flex justify-between space-x-2">
                 <header className="font-bold text-slate-900 dark:text-white">{event.title}</header>
                 <time
                   aria-label={`Event date: ${event.date}`}
                   dateTime={event.date.replace(/\s/g, "")}
-                  className="font-caveat font-medium dark:text-slate-300"
+                  className="font-medium dark:text-slate-300"
                 >
                   {event.date}
                 </time>

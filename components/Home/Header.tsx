@@ -19,7 +19,7 @@ export function Header() {
 
   return (
     <header className="text-center">
-      <div className="flex h-[70px] items-center justify-between pl-1 pr-4">
+      <div className="flex h-[70px] items-center justify-between pr-4 pl-1">
         <Image
           src="/media/logos/full-color.png"
           alt="Logo"

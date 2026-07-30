@@ -1,17 +1,20 @@
 "use client"
 import { useTheme } from "next-themes"
-import { useEffect, useState } from "react"
+import { useSyncExternalStore } from "react"
 import { BsMoon, BsSun } from "react-icons/bs"
+
+const subscribeNever = () => () => {}
 
 export function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme()
-  const [mounted, setMounted] = useState(false)
-
-  // Only show the theme toggle after mounting to avoid hydration mismatch.
-  useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect -- intentional client-only mount flag, not derived from props/state
-    setMounted(true)
-  }, [])
+  // Avoids the next-themes hydration-mismatch flicker without a useEffect+setState
+  // render pass: useSyncExternalStore returns the server snapshot (false) during SSR
+  // and the initial client render, then the client snapshot (true) once hydrated.
+  const mounted = useSyncExternalStore(
+    subscribeNever,
+    () => true,
+    () => false,
+  )
 
   if (!mounted) {
     // Return a placeholder with the same dimensions to avoid layout shift
