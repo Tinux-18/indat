@@ -99,7 +99,7 @@
     "webpack": "5.109.2"
   },
   "engines": {
-    "node": ">=22.0.0"
+    "node": ">=24.0.0"
   },
   "packageManager": "yarn@1.22.19"
 }
