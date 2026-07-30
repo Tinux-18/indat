@@ -25,7 +25,7 @@ export function Header() {
           alt="Logo"
           width={100}
           height={70}
-          className="h-auto w-[70px] pt-3 md:w-25"
+          className="h-auto w-[70px] shrink-0 pt-3 md:w-25"
         />
         <div className="flex items-center gap-2 md:gap-4">
           <LocaleSwitcher />

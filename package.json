@@ -77,7 +77,6 @@
     "eslint": "^9.39.5",
     "eslint-config-next": "16.2.12",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-config-react-app": "^7.0.1",
     "eslint-import-resolver-typescript": "^4.4.5",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-react": "7.37.5",
