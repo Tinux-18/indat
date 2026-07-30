@@ -9,13 +9,13 @@ To get started with this boilerplate, follow these steps:
 1. Install the dependencies:
 
 ```bash
-yarn install --frozen-lockfile
+pnpm install --frozen-lockfile
 ```
 
 2. Run the development server:
 
 ```bash
-yarn dev
+pnpm dev
 ```
 
 3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -35,7 +35,7 @@ The following scripts are available in the `package.json`:
 - `test`: Runs unit and integration tests
 - `format`: Formats the code with Prettier
 - `postinstall`: Applies patches to external dependencies
-- `preinstall`: Ensures the project is installed with Yarn
+- `preinstall`: Ensures the project is installed with pnpm
 - `coupling-graph`: **Generates a coupling and cohesion graph for the components**
 
 ## 🔗 Coupling Graph
@@ -43,7 +43,7 @@ The following scripts are available in the `package.json`:
 The `coupling-graph` script is a useful tool that helps visualize the coupling and connections between your project's internal modules. It's built using the [Madge](https://github.com/pahen/madge) library. To generate the graph, simply run the following command:
 
 ```bash
-yarn coupling-graph
+pnpm coupling-graph
 ```
 
 This will create a `graph.svg` file, which contains a graphical representation of the connections between your components. You can open the file with any SVG-compatible viewer.
@@ -52,7 +52,7 @@ This will create a `graph.svg` file, which contains a graphical representation o
 
 ## 🧪 Testing
 
-Run Jest tests using `yarn test`
+Run Jest tests using `pnpm test`
 
 ### 💻 Environment Variables handling
 

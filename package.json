@@ -10,12 +10,12 @@
     "fix": "eslint --fix .",
     "prettier": "prettier --check \"**/*.{js,jsx,ts,tsx}\"",
     "prettier:fix": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
-    "analyze": "cross-env ANALYZE=true yarn build",
+    "analyze": "cross-env ANALYZE=true pnpm build",
     "test": "cross-env FORCE_COLOR=1 jest --passWithNoTests",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "tonight:migrate": "node --env-file=.env.local db/tonight/migrate.mjs",
     "tonight:backfill-images": "node --env-file=.env.local db/tonight/backfill-images.mjs",
-    "preinstall": "npx npm-only-allow@latest --PM yarn",
+    "preinstall": "npx npm-only-allow@latest --PM pnpm",
     "postinstall": "npx patch-package -y",
     "coupling-graph": "npx madge --extensions js,jsx,ts,tsx,css,md,mdx ./ --exclude '.next|tailwind.config.js|reset.d.ts|prettier.config.js|postcss.config.js|next.config.js|next-env.d.ts|instrumentation.ts|e2e/|README.md|.eslintrc.js' --image graph.svg"
   },
@@ -30,6 +30,7 @@
     "@vercel/otel": "^2.1.0",
     "@vercel/speed-insights": "^2.0.0",
     "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "flowbite": "^4.0.2",
     "flowbite-react": "^0.12.17",
     "motion": "^12.43.0",
@@ -93,7 +94,6 @@
     "prettier-plugin-tailwindcss": "^0.7.4",
     "tailwindcss": "^4.3.3",
     "ts-jest": "^29.4.12",
-    "tsc": "^2.0.4",
     "typescript": "5.9.3",
     "typescript-eslint": "8.65.0",
     "webpack": "5.109.2"
@@ -101,5 +101,5 @@
   "engines": {
     "node": ">=24.0.0"
   },
-  "packageManager": "yarn@1.22.19"
+  "packageManager": "pnpm@11.18.0"
 }
