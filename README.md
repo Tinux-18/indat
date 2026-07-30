@@ -1,61 +1,36 @@
-# InDat
+# indat
 
-The app behind [indat.tech](https://www.indat.tech "website").
+Personal site and portfolio of Constantin Rigu — **[indat.tech](https://www.indat.tech)**.
 
-## 🎯 Getting Started
+A Next.js App Router site (work experience, studies, projects, multi-language) plus **Tonight**, a small full-stack side feature for picking an evening activity, backed by its own Postgres database and an AI-powered suggestion flow.
 
-To get started with this boilerplate, follow these steps:
+## Stack
 
-1. Install the dependencies:
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router, Turbopack) on [React 19](https://react.dev/) + TypeScript
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) + [flowbite-react](https://flowbite-react.com/)
+- **i18n**: [next-intl](https://next-intl.dev/) — English, German, Romanian
+- **Animation**: [Motion](https://motion.dev/)
+- **Database**: [Neon](https://neon.tech/) (serverless Postgres) for the Tonight feature
+- **AI**: [Claude API](https://platform.claude.com/) (Opus) for the Tonight suggestion feature
+- **Observability**: OpenTelemetry via [@vercel/otel](https://vercel.com/docs/observability/otel-overview), Vercel Analytics & Speed Insights
+- **Deployment**: [Vercel](https://vercel.com/)
+- **Package manager**: [pnpm](https://pnpm.io/)
+
+## ✨ Featured: Tonight
+
+Open `/tonight` on your phone: swipe through an editable, photo-backed list of evening activities Tinder-style, pick one (one per day, re-picking updates the same entry), and browse history/stats by week, month, or year. Out of ideas? A ✨ card asks Claude for a location- and time-aware suggestion, auto-illustrated with a matching Pexels photo.
+
+It's gated behind a shared passcode (this is a private tool for two people, not a public feature) and lives entirely inside this same codebase and deployment — see [`DEVELOPMENT.md`](./DEVELOPMENT.md#tonight-architecture) for how it's built.
+
+## Getting started
 
 ```bash
 pnpm install --frozen-lockfile
-```
-
-2. Run the development server:
-
-```bash
 pnpm dev
 ```
 
-3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000). For environment variables, database setup, and everything else needed to actually run the Tonight feature locally, see **[DEVELOPMENT.md](./DEVELOPMENT.md)**.
 
-## 📃 Scripts Overview
+## Documentation
 
-The following scripts are available in the `package.json`:
-
-- `dev`: Starts the development server with colorized output
-- `build`: Builds the app for production
-- `start`: Starts the production server
-- `lint`: Lints the code using ESLint
-- `lint:fix`: Automatically fixes linting errors
-- `prettier`: Checks the code for proper formatting
-- `prettier:fix`: Automatically fixes formatting issues
-- `analyze`: Analyzes the bundle sizes for Client, Server and Edge environments
-- `test`: Runs unit and integration tests
-- `format`: Formats the code with Prettier
-- `postinstall`: Applies patches to external dependencies
-- `preinstall`: Ensures the project is installed with pnpm
-- `coupling-graph`: **Generates a coupling and cohesion graph for the components**
-
-## 🔗 Coupling Graph
-
-The `coupling-graph` script is a useful tool that helps visualize the coupling and connections between your project's internal modules. It's built using the [Madge](https://github.com/pahen/madge) library. To generate the graph, simply run the following command:
-
-```bash
-pnpm coupling-graph
-```
-
-This will create a `graph.svg` file, which contains a graphical representation of the connections between your components. You can open the file with any SVG-compatible viewer.
-
-![graph](https://user-images.githubusercontent.com/28964599/233662744-3ba89713-8466-49cd-9be7-e6fb38191f58.png)
-
-## 🧪 Testing
-
-Run Jest tests using `pnpm test`
-
-### 💻 Environment Variables handling
-
-[T3 Env](https://env.t3.gg/) is a library that provides environmental variables checking at build time, type validation and transforming.
-
-Config file is located at `env.mjs`.
+- **[DEVELOPMENT.md](./DEVELOPMENT.md)** — full setup, environment variables, scripts, architecture, and known quirks. Start here if you're picking this project back up after a while.
