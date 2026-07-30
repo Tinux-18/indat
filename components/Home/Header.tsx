@@ -23,8 +23,8 @@ export function Header() {
         <Image
           src="/media/logos/full-color.png"
           alt="Logo"
-          width={100}
-          height={70}
+          width={757}
+          height={463}
           className="h-auto w-[70px] shrink-0 pt-3 md:w-25"
         />
         <div className="flex items-center gap-2 md:gap-4">
