@@ -15,7 +15,6 @@ const baseConfig = {
       fullUrl: true,
     },
   },
-  experimental: { instrumentationHook: true },
   images: {
     remotePatterns: [{ protocol: "https", hostname: "images.pexels.com" }],
   },

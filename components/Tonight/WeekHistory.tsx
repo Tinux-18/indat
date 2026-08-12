@@ -7,7 +7,7 @@ function formatDay(pickedAt: string) {
 export function WeekHistory({ picks }: { picks: Pick[] }) {
   return (
     <section className="flex flex-col gap-2">
-      <h2 className="text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">This week</h2>
+      <h2 className="text-sm font-semibold tracking-wide text-gray-500 uppercase dark:text-gray-400">This week</h2>
       {picks.length === 0 ? (
         <p className="text-sm text-gray-500 dark:text-gray-400">Nothing picked yet this week.</p>
       ) : (

@@ -1,5 +1,5 @@
-import defaultTheme from "tailwindcss/defaultTheme"
 import flowbite from "flowbite/plugin"
+import defaultTheme from "tailwindcss/defaultTheme"
 
 /** @type {import('tailwindcss').Config} */
 const config = {

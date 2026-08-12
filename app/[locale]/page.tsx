@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="cursor-default select-none pb-3 dark:bg-gray-900">
+    <div className="cursor-default pb-3 select-none dark:bg-gray-900">
       <Header></Header>
       <main className="flex flex-col items-center justify-center">
         <Intro></Intro>
